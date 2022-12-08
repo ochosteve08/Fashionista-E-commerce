@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+/** 
+*! Base Reset
+**/
+
+*{
+    padding: 0px;
+    margin: 0px;
+   
+    
+}
+
+body{
+    color: #1A1A1A;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+       
+}
+
+#containers{
+    display: flex;
+    flex-direction: column;
+    
+ 
+}
+
+/** 
+*! styling for header and navbar
+**/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+   
+}
+
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding:15px;
+    font-weight: 500;
+    font-size: 20px;
+   
+}
+
+.header-cart ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-cart ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+svg{
+    width: 27px;
+}
+.cartAmount{
+    position: absolute;
+    background-color:  rgb(11, 194, 11);
+    font-size: 12px;
+    top: -1px;
+    right:10px;
+    padding: 2px 5px;
+    border-radius: 8px;
+    color: white;
+
+
+}
+
+.header-cart ul li button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: none;
+    cursor: pointer;
+}
+
+/** 
+*! styling for the promo section
+**/
+
+#promo{
+    background: #02C567 ;
+    height: auto;
+    border-radius: 8px;
+    background-image: url(/icons/promo.svg);
+    background-position: right bottom;
+    background-repeat:no-repeat;
+    color: #ffffff;
+    padding: 40px;
+   
+   
+   
+}
+
+.promo-offer{
+    width: 50%;
+ 
+}
+
+
+.promo-offer h6{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.promo-offer h1{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 30px;
+  
+}
+
+#promo p{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/** 
+*! styling for product section
+**/
+
+#product-collection h3{
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+#product{
+    display: grid;
+    grid-template-columns:repeat(4,23%);
+    justify-content: space-between;
+    gap: 20px;
+    height: auto;
+
+}
+
+
+.items img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.items{
+position: relative;    
+background: #F3F3F3;
+box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25), 4px 4px 4px rgba(206, 206, 206, 0.25);
+border-radius: 8px;
+margin-bottom:70px;
+cursor: pointer;
+
+}
+
+.items:hover{
+    border-radius:0%;
+    
+}
+
+.item-price h4{
+
+  font-size: 16px;
+padding: 5px 10px;
+font-weight: bold;
+
+
+}
+
+
+.item-price h6{
+
+font-size: 14px;
+padding: 5px 10px;
+
+}
+
+/*.item-price h6 span{
+    font-weight: bold;
+}*/
+
+.add-to-bag{
+   
+    position: absolute;
+    display: flex;
+    background: #F3F3F3;
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: none;
+  
+   
+
+ 
+}
+
+.add-to-bag button{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+
+.items:hover .add-to-bag{
+    display: flex;
+    box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25), 4px 4px 4px rgba(206, 206, 206, 0.25);
+    
+}
+
+.add-to-bag button{
+    display: flex;
+    justify-content: center;
+   
+    background: #7D0A80;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25), 4px 4px 4px rgba(206, 206, 206, 0.25);
+    padding: 0 20px;
+    gap: 10px;
+    margin: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.add-to-bag button svg{
+    stroke: #ffffff;
+}
+
+#pagination{
+
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+   
+
+}
+
+#pagination h3{
+    
+color:#7D0A80;
+}
+
+#pagination p span{
+    color:  #02C567;
+}
+
+
+/** 
+*! styling for footer
+**/
+
+footer{
+  
+    background-color: #B2ADD4;
+    color: black;
+    padding: 30px 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    position: absolute;
+   
+
+    
+}
+
+#wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+    
+}
+
+#wrapper div{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+   
+}
+
+#wrapper div a{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    color: #000000;
+
+}
+
+footer p{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+/** 
+*! styling for media query
+**/
+
+@media (max-width:1100px) {
+    .container{
+    width: 90%;
+    
+}
+    
+}
+
+
+@media (max-width:920px) {
+
+
+    #containers{
+        gap: auto;
+    }
+
+   
+
+#product{
+    display: grid;
+    grid-template-columns:repeat(3,31%);
+    justify-content: space-between;
+      gap: 20px;
+ 
+}
+
+.add-to-bag{
+
+    display: flex;
+
+}
+
+
+
+
+#wrapper
+{
+    gap: 20px;
+
+}
+
+#wrapper div{
+   
+    width: 45%;
+   
+}
+}
+
+
+@media (max-width:800px) {
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-direction: column;
+    position: absolute;
+    margin: 30px 0;
+    padding: 10px 0;
+    gap: 15px;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+  
+}
+
+.cartAmount{
+   
+    top:1px;
+    right:40px;
+   
+
+
+}
+
+
+nav>ul.show{
+    display: flex;
+}
+
+#promo.show{
+      margin-top: 120px;
+}
+
+.promo-offer{
+    width: 60%;
+ 
+}
+
+#product{
+    display: grid;
+    grid-template-columns:repeat(2,45%);
+    justify-content: space-between;
+    gap: 40px;
+ 
+}
+
+
+.header-cart ul li button{
+   display: block;
+
+}
+}
+
+
+
+@media (max-width:550px) {
+
+#product{
+    display: grid;
+    grid-template-columns:repeat(1,100%);
+    gap: 40px;
+ 
+}
+#promo{
+    background-position: center bottom;
+}
+
+.promo-offer{
+    width: 100%;
+
+}
+
+#wrapper
+{
+    gap: 20px;
+
+}
+
+
+#wrapper div{
+   
+    width: 100%;
+    align-items: center;
+   
+}
+
+ 
+
+}
+
+/** 
+*! styling for cart page
+**/
+
+/** 
+*! styling for #label
+**/
+
+.text-center{
+   /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;*/
+
+    text-align: center;
+    font-weight: bold; 
+    margin: 20px auto;
+   
+  }
+
+
+/** 
+*! styling for #shoppingCart
+**/
+
+.shopping{
+    display: grid;
+    grid-template-columns: repeat(1,520px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 50px;
+   
+
+}
+
+
+.cart-item{
+    display: flex;
+    border: 2px solid #F3F3F3;;
+    border-radius: 5px;
+    box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25), 4px 4px 4px rgba(206, 206, 206, 0.25);
+    background: #F3F3F3;;
+ 
+}
+
+
+
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 15px;
+ 
+}
+
+
+
+
+.title-price-x{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 340px;
+    gap: 30px;
+}
+
+
+
+.priceX{
+    background: #7D0A80;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25), 4px 4px 4px rgba(206, 206, 206, 0.25);
+  
+    
+}
+
+.title-price-x svg{
+    color: red;
+    font-weight: bold;
+     cursor: pointer;
+
+}
+
+.cart-buttons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+     
+}
+
+.cart-buttons svg{
+    cursor: pointer;
+}
+
+.homeBtn, .checkOut, .removeAll {
+    background:  #7D0A80;
+    color: white;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25), 4px 4px 4px rgba(206, 206, 206, 0.25);
+}
+
+.checkOut{
+    background-color:green ;
+
+}
+
+
+ .removeAll{
+    background-color: red;
+ }
+
+
