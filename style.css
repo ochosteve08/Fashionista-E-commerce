@@ -12,11 +12,22 @@
     
 }
 
+
+html, body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    width:100vw;
+
+}
+
+
 body{
     color: #1A1A1A;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     position: relative;
+   
+    
 }
 
 
@@ -42,6 +53,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    animation: fade-in 1.5s ease-in-out both 1s;
     
    
 }
@@ -58,9 +70,18 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    padding:15px;
+    padding:5px 15px;
     font-weight: 500;
     font-size: 20px;
+    color: #1A1A1A;
+    border-radius: 8px;
+    transition: all 1s  ease-in-out;
+   
+}
+
+nav ul li a:hover{
+  background:rgba(11, 194, 11,0.4);
+  letter-spacing: 5px;
    
 }
 
@@ -74,6 +95,8 @@ nav ul li a{
     list-style: none;
     margin-left: 15px;
 }
+
+
 
 svg{
     width: 27px;
@@ -112,6 +135,7 @@ svg{
     background-repeat:no-repeat;
     color: #ffffff;
     padding: 40px;
+    animation: fade-in 1.5s ease-in both 2s;
    
    
    
@@ -148,6 +172,7 @@ svg{
 #product-collection h3{
     text-align: center;
     margin: 30px 0;
+    animation: fade-in 1.5s ease-in both 3s;
 
 }
 
@@ -157,6 +182,7 @@ svg{
     justify-content: space-between;
     gap: 20px;
     height: auto;
+    animation: fade-in 1.5s ease-in both 3s;
 
 }
 
@@ -173,11 +199,14 @@ box-shadow: -4px 4px 4px rgba(206, 206, 206, 0.25), 4px 4px 4px rgba(206, 206, 2
 border-radius: 8px;
 margin-bottom:70px;
 cursor: pointer;
+transition: all 1s  ease-in-out;
+
 
 }
 
 .items:hover{
     border-radius:0%;
+    transform: scale(1.1);
     
 }
 
@@ -265,10 +294,28 @@ padding: 5px 10px;
 #pagination h3{
     
 color:#7D0A80;
+ transition: all 1s  ease-in-out;
+}
+
+#pagination h3:hover{
+    font-size: 22px;
+   
+
+
 }
 
 #pagination p span{
     color:  #02C567;
+    transition: all 1s  ease-in-out;
+}
+
+#pagination p span:hover{
+    font-size: 16px;
+     background:rgba(11, 194, 11,0.4);
+    cursor: pointer;
+    padding:0 5px;
+    border-radius: 3px;
+    
 }
 
 
@@ -354,12 +401,12 @@ footer p{
       gap: 20px;
  
 }
-
+/* 
 .add-to-bag{
 
     display: flex;
 
-}
+} */
 
 
 
@@ -381,7 +428,7 @@ footer p{
 @media (max-width:800px) {
 
 
-nav ul{
+ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -410,6 +457,7 @@ nav ul{
 
 nav>ul.show{
     display: flex;
+    animation: fade-in 0.5s ease-in both 0.5s;
 }
 
 #promo.show{
@@ -432,8 +480,16 @@ nav>ul.show{
 
 .header-cart ul li button{
    display: block;
+   padding: 5px;
+   border-radius: 3px;
+   transition: all 1s ease;
 
 }
+.header-cart ul li button:hover{
+     background:rgba(11, 194, 11,0.4);
+
+}
+
 }
 
 
@@ -467,6 +523,17 @@ nav>ul.show{
     width: 100%;
     align-items: center;
    
+}
+
+.add-to-bag{
+    justify-content: center;
+}
+
+.add-to-bag button{
+   
+    justify-content: center;
+    align-items: center;
+     
 }
 
  
@@ -596,3 +663,11 @@ nav>ul.show{
  }
 
 
+
+ /** 
+*! styling for transition and animation
+**/
+@keyframes fade-in{
+    from{opacity:0%;}
+    to{opacity:100%}
+}
