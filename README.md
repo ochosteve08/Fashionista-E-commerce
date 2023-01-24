@@ -1,7 +1,10 @@
 ### <h1>Ecommerce Website</h1>
 This is an ecommerce website built with CRUD (Create, Read, Update, and Delete) functionality. The website is built using HTML, CSS, and JavaScript.
 
-- Features
+-- Features
+  - View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See all testimonials in a horizontal slider
   -Users can view a list of products
   -Users can view the details of a specific product
   -Users can add a product to their cart
