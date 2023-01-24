@@ -6,19 +6,26 @@ let shop =  document.getElementById("product");
 
 function toggleMenu(){
 
-
-btn.addEventListener("click",(event)=>{
     menu.classList.toggle("show");
-     promo.classList.toggle("show");
+    promo.classList.toggle("show");
 
-    
-})
-/*btn.onclick = function(){
-    menu.classList.toggle("show");
+};
 
-
-}*/};
+    btn.addEventListener("click",(event)=>{
+    event.stopPropagation();  
     toggleMenu();
+    
+        
+    })
+   
+
+    document.documentElement.addEventListener("click", (event)=> {
+            if (menu.classList.contains("show")) {
+                toggleMenu();
+                 
+    }
+   
+    });
 
 // to retrieve the array of objects domiciled in local storage
 let basket = JSON.parse(localStorage.getItem("cartData"))||[];

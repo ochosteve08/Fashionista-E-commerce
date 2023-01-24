@@ -459,7 +459,7 @@ footer p{
 
 nav>ul.show{
     display: flex;
-    animation: fade-in 0.5s ease-in both 0.5s;
+    animation: fade-in 0.5s ease-in both 0.2s;
 }
 
 #promo.show{
@@ -484,7 +484,7 @@ nav>ul.show{
    display: block;
    padding: 5px;
    border-radius: 3px;
-   transition: all 1s ease;
+   transition: all 1s ease-in-out;
 
 }
 .header-cart ul li button:hover{
