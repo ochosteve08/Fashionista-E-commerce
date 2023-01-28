@@ -1,6 +1,6 @@
 # E-commerce Website
 
-<<<<<<< version2
+
 This is an e-commerce website built with CRUD (Create, Read, Update, and Delete) functionality. The website is built using HTML, CSS, and JavaScript.
 =======
 -- Features
