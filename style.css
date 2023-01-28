@@ -227,9 +227,7 @@ padding: 5px 10px;
 
 }
 
-/*.item-price h6 span{
-    font-weight: bold;
-}*/
+
 
 .add-to-bag{
    
@@ -403,15 +401,6 @@ footer p{
       gap: 20px;
  
 }
-/* 
-.add-to-bag{
-
-    display: flex;
-
-} */
-
-
-
 
 #wrapper
 {
@@ -449,8 +438,8 @@ footer p{
 
 .cartAmount{
    
-    top:1px;
-    right:40px;
+    top:2px;
+    right:45px;
    
 
 
