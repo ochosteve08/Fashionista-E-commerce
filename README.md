@@ -14,14 +14,13 @@ This is an e-commerce website built with CRUD (Create, Read, Update, and Delete)
   -Users can view their order history (coming soon)
   -Admin can add, edit and delete products (coming soon)
 
-### Technologies Used
+## Technologies Used
 
   -HTML
   -CSS
   -JavaScript
   -Firebase: database for storing the products and orders (coming soon)
 
-Contributing
+### Contributing
+
 If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
-
-
