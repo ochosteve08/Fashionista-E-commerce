@@ -17,7 +17,6 @@ This is an e-commerce website built with CRUD (Create, Read, Update, and Delete)
   - Admin can add, edit and delete products (coming soon)
 
 
-
 ### Technologies Used
 
 - HTML
@@ -26,9 +25,10 @@ This is an e-commerce website built with CRUD (Create, Read, Update, and Delete)
 - Firebase: database for storing the products and orders (coming soon)
 
 
+### Contributing
 
-Contributing
 If you would like to contribute to this project, please fork the repository and create a pull request with your changes.
 
-License
+### License
+
 This project is licensed under the MIT License. See LICENSE for more information.
