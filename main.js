@@ -41,11 +41,13 @@ let generateShop= ()=>{
 
         
     return ` <div   class="items">
-                    <img src=${img} alt="${name}" />
+                    <img src=${img}  loading="lazy"  alt="${name}" />
                     <div class="item-price">
                         <h4>${name}</h4>
                         <h6>$${price}</h6>
-                        <h6  class="quantity">Quantity in Cart: <span id=${id}>${search.quantity===undefined?0:search.quantity}</span></h6>
+                        <h6  class="quantity">Quantity in Cart: <span id=${id}>${
+      search.quantity === undefined ? 0 : search.quantity
+    }</span></h6>
                        
                 
                     </div>
@@ -67,7 +69,7 @@ let generateShop= ()=>{
  
                     </div>
                 
-                </div>`
+                </div>`;
 
 
 
